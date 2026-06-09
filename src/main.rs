@@ -1,3 +1,9 @@
+use crate::cpu::CPU;
+
+#[path="cpu/cpu.rs"]
+mod cpu;
+mod bus;
+
 fn main() {
-    println!(":D");
+    let cpu = CPU::new();
 }
